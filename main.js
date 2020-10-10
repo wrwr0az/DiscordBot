@@ -162,10 +162,10 @@ client.on('message', (message) => {
 client.on('message', (message) => {
 	console.log(`[${message.author.tag}]: ${message.content}`);
 	if (message.content === "ضيف الكل"){
-		if (!B.includes(M11)){
-			B.push(M1,M11,M2,M5,M4,M6,M3,M7,M8,M10,M9);
+		B = [];
+		B.push(M1,M11,M2,M5,M4,M6,M3,M7,M8,M10,M9);
 		message.channel.send("Done");}
-	}
+	
 });
 
 
