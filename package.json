@@ -1,0 +1,15 @@
+{
+  "name": "bitches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodemon bot"
+  },
+  "author": "wrwr",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "firebase": "^7.22.1"
+  }
+}
