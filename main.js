@@ -297,16 +297,11 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   console.log(`${message.content}`);
   if (message.content === S) {
-    message.channel.send(N);
+    message.channel.(`${N}`);
   }
 });
 
-client.on("message", (message) => {
-  console.log(`${message.content}`);
-  if (message.content === N) {
-    message.channel.send(S);
-  }
-});
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
