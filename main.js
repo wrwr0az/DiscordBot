@@ -296,19 +296,9 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   console.log(`${message.content}`);
-  if (message.content === S) {
-    //Discord.MessageMentions(Discord.User(Naruto_AFA));
-    message.mentions(`<@!${Naruto_AFA}>`);
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`${message.content}`);
 
   if (message.content === S) {
-    msg.mentions.users.forEach((e) => {
-      e.send("Hi");
-    });
+    message.channel.send("@Naruto_AFA#2578");
   }
 });
 
