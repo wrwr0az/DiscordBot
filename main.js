@@ -308,7 +308,7 @@ client.on("message", (message) => {
   if (message.content === "شوف شغلك") {
     //Discord.MessageMentions(Discord.User(Naruto_AFA));
     let user = message.mentions.users.first();
-    user.send("خدمي");
+    message.channel(user);
   }
 });
 
