@@ -298,7 +298,7 @@ client.on("message", (message) => {
   console.log(`${message.content}`);
 
   if (message.content === S) {
-    message.channel.send("<@Naruto_AFA#2578>");
+    message.channel.send("<@!187131318755131392>");
   }
 });
 
