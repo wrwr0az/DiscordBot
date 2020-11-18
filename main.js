@@ -305,10 +305,10 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   console.log(`${message.content}`);
 
-  if (message.content === "شوف شغلك") {
-    //Discord.MessageMentions(Discord.User(Naruto_AFA));
-    let user = message.mentions.users.first();
-    message.channel(user);
+  if (message.content === S) {
+    msg.mentions.users.forEach((e) => {
+      e.send("Hi");
+    });
   }
 });
 
