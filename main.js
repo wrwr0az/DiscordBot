@@ -297,7 +297,8 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   console.log(`${message.content}`);
   if (message.content === S) {
-    Discord.MessageMentions(Discord.User(Naruto_AFA));
+    //Discord.MessageMentions(Discord.User(Naruto_AFA));
+    message.mentions(`[${Naruto_AFA}]`);
   }
 });
 
