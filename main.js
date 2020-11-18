@@ -297,11 +297,9 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   console.log(`${message.content}`);
   if (message.content === S) {
-    message.channel.(`${N}`);
+    Discord.MessageMentions(Discord.User(Naruto_AFA));
   }
 });
-
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
