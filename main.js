@@ -304,11 +304,19 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   console.log(`${message.content}`);
+  if (message.content === "ازعج السيمب")
+  
+	
+	for (let i = 0; i < 10; i++) {
+		setTimeout(function () {
+			client.users.get("<@!183220336786014209>").send("سلام");
+		}, 500);
+	  }
+	}
 
-  message.mentions.users.forEach((e) => {
-    console.log(e.id);
-  });
+  );
 });
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
