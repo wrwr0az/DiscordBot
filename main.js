@@ -31,8 +31,8 @@ var S = process.env.S;
 var N = process.env.N;
 
 client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
   if (message.content === process.env.WORD) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.length > 0) {
       message.channel.send(process.env.WEEK);
       for (let i = 0; i < B.length; i++) {
@@ -41,279 +41,208 @@ client.on("message", (message) => {
     } else {
       message.channel.send(process.env.NOTH);
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === "bc") {
+  } else if (message.content === "bc") {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     message.channel.send(process.env.COM);
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD2) {
+  } else if (message.content === process.env.ADD2) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M2)) {
       B.push(M2);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD9) {
+  } else if (message.content === process.env.ADD9) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M9)) {
       B.push(M9);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD5) {
+  } else if (message.content === process.env.ADD5) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M5)) {
       B.push(M5);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD6) {
+  } else if (message.content === process.env.ADD6) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M6)) {
       B.push(M6);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD4) {
+  } else if (message.content === process.env.ADD4) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M4)) {
       B.push(M4);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD10) {
+  } else if (message.content === process.env.ADD10) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M10)) {
       B.push(M10);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD3) {
+  } else if (message.content === process.env.ADD3) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M3)) {
       B.push(M3);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD8) {
+  } else if (message.content === process.env.ADD8) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M8)) {
       B.push(M8);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD7) {
+  } else if (message.content === process.env.ADD7) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M7)) {
       B.push(M7);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD1) {
+  } else if (message.content === process.env.ADD1) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M1)) {
       B.push(M1);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.ADD11) {
+  } else if (message.content === process.env.ADD11) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (!B.includes(M11)) {
       B.push(M11);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === "ضيف الكل") {
+  } else if (message.content === "ضيف الكل") {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     B = [];
     B.push(M1, M11, M2, M5, M4, M6, M3, M7, M8, M10, M9);
     message.channel.send("Done");
   }
-});
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL2) {
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  else if (message.content === process.env.DEL2) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M2)) {
       B.pop(M2);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL9) {
+  } else if (message.content === process.env.DEL9) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M9)) {
       B.pop(M9);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL5) {
+  } else if (message.content === process.env.DEL5) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M5)) {
       B.pop(M5);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL6) {
+  } else if (message.content === process.env.DEL6) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M6)) {
       B.pop(M6);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL4) {
+  } else if (message.content === process.env.DEL4) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M4)) {
       B.pop(M4);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL10) {
+  } else if (message.content === process.env.DEL10) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M10)) {
       B.pop(M10);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL3) {
+  } else if (message.content === process.env.DEL3) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M3)) {
       B.pop(M3);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL8) {
+  } else if (message.content === process.env.DEL8) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M8)) {
       B.pop(M8);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL7) {
+  } else if (message.content === process.env.DEL7) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M7)) {
       B.pop(M7);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL1) {
+  } else if (message.content === process.env.DEL1) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M1)) {
       B.pop(M1);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === process.env.DEL11) {
+  } else if (message.content === process.env.DEL11) {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.includes(M11)) {
       B.pop(M11);
       message.channel.send("Done");
     }
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`[${message.author.tag}]: ${message.content}`);
-  if (message.content === "إحذف الكل") {
+  } else if (message.content === "إحذف الكل") {
+    console.log(`[${message.author.tag}]: ${message.content}`);
     if (B.length > 0) {
       B = [];
       message.channel.send("Done");
     }
   }
-});
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
-client.on("message", (message) => {
-  console.log(`${message.content}`);
-
-  if (message.content === S) {
+  /////////////////////////////////////////////////////////////////////////////////////////////////////
+  else if (message.content === S) {
+    console.log(`${message.content}`);
     message.channel.send("<@!187131318755131392>");
-  }
-});
-
-client.on("message", (message) => {
-  console.log(`${message.content}`);
-  if (message.content === "ازعج السيمب") {
+  } else if (message.content === "ازعج السيمب") {
+    console.log(`${message.content}`);
     for (let i = 0; i < 10; i++) {
       setTimeout(function () {
         client.users.get("<@!183220336786014209>").send("سلام");
       }, 500);
     }
   }
-});
 
-//////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////
+
+  // 791340426372055052;
+
+  // let channel_1 = message.guild.channels.cache.get("791340426372055052");
+  // console.log(channel_1);
+
+  // 791340556906659892;
+
+  console.log("HERE");
+  let channel_1 = client.channels.cache.get("791340426372055052");
+  console.log(channel_1.name + " " + channel_1.id);
+
+  let channel_2 = client.channels.cache.get("791340556906659892");
+  console.log(channel_2.name + " " + channel_2.id);
+
+  function moveToChannelTwo() {
+    channel_1.members.forEach((e) => {
+      console.log("Members moves to Channel 2 ");
+      e.voice.setChannel(channel_2);
+
+      setTimeout(moveToChannelOne, 1000);
+    });
+  }
+
+  function moveToChannelOne() {
+    channel_2.members.forEach((e) => {
+      console.log("Members moves to chanel 1");
+      setTimeout(function () {
+        e.voice.setChannel(channel_1);
+      }, 1000);
+    });
+  }
+
+  setInterval(moveToChannelTwo, 3000);
+});
+//we return a message that operation went successful
+//return message.channel.send("Everyone was moved!")
 
 B.sort();
 client.login(process.env.TOKEN);
